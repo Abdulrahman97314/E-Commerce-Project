@@ -1,0 +1,24 @@
+C:\Users\abdo1\OneDrive\Desktop\New folder\Store\Store.core\bin\Debug\net6.0\Store.Core.deps.json
+C:\Users\abdo1\OneDrive\Desktop\New folder\Store\Store.core\bin\Debug\net6.0\Store.Core.dll
+C:\Users\abdo1\OneDrive\Desktop\New folder\Store\Store.core\bin\Debug\net6.0\Store.Core.pdb
+C:\Users\abdo1\OneDrive\Desktop\New folder\Store\Store.core\obj\Debug\net6.0\Store.Core.csproj.AssemblyReference.cache
+C:\Users\abdo1\OneDrive\Desktop\New folder\Store\Store.core\obj\Debug\net6.0\Store.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\abdo1\OneDrive\Desktop\New folder\Store\Store.core\obj\Debug\net6.0\Store.Core.AssemblyInfoInputs.cache
+C:\Users\abdo1\OneDrive\Desktop\New folder\Store\Store.core\obj\Debug\net6.0\Store.Core.AssemblyInfo.cs
+C:\Users\abdo1\OneDrive\Desktop\New folder\Store\Store.core\obj\Debug\net6.0\Store.Core.csproj.CoreCompileInputs.cache
+C:\Users\abdo1\OneDrive\Desktop\New folder\Store\Store.core\obj\Debug\net6.0\Store.Core.dll
+C:\Users\abdo1\OneDrive\Desktop\New folder\Store\Store.core\obj\Debug\net6.0\refint\Store.Core.dll
+C:\Users\abdo1\OneDrive\Desktop\New folder\Store\Store.core\obj\Debug\net6.0\Store.Core.pdb
+C:\Users\abdo1\OneDrive\Desktop\New folder\Store\Store.core\obj\Debug\net6.0\ref\Store.Core.dll
+C:\Users\abdo1\OneDrive\Desktop\New folder\.Net 6 api store project + MVC Dashboard\Store.core\bin\Debug\net6.0\Store.Core.deps.json
+C:\Users\abdo1\OneDrive\Desktop\New folder\.Net 6 api store project + MVC Dashboard\Store.core\bin\Debug\net6.0\Store.Core.dll
+C:\Users\abdo1\OneDrive\Desktop\New folder\.Net 6 api store project + MVC Dashboard\Store.core\bin\Debug\net6.0\Store.Core.pdb
+C:\Users\abdo1\OneDrive\Desktop\New folder\.Net 6 api store project + MVC Dashboard\Store.core\obj\Debug\net6.0\Store.Core.csproj.AssemblyReference.cache
+C:\Users\abdo1\OneDrive\Desktop\New folder\.Net 6 api store project + MVC Dashboard\Store.core\obj\Debug\net6.0\Store.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\abdo1\OneDrive\Desktop\New folder\.Net 6 api store project + MVC Dashboard\Store.core\obj\Debug\net6.0\Store.Core.AssemblyInfoInputs.cache
+C:\Users\abdo1\OneDrive\Desktop\New folder\.Net 6 api store project + MVC Dashboard\Store.core\obj\Debug\net6.0\Store.Core.AssemblyInfo.cs
+C:\Users\abdo1\OneDrive\Desktop\New folder\.Net 6 api store project + MVC Dashboard\Store.core\obj\Debug\net6.0\Store.Core.csproj.CoreCompileInputs.cache
+C:\Users\abdo1\OneDrive\Desktop\New folder\.Net 6 api store project + MVC Dashboard\Store.core\obj\Debug\net6.0\Store.Core.dll
+C:\Users\abdo1\OneDrive\Desktop\New folder\.Net 6 api store project + MVC Dashboard\Store.core\obj\Debug\net6.0\refint\Store.Core.dll
+C:\Users\abdo1\OneDrive\Desktop\New folder\.Net 6 api store project + MVC Dashboard\Store.core\obj\Debug\net6.0\Store.Core.pdb
+C:\Users\abdo1\OneDrive\Desktop\New folder\.Net 6 api store project + MVC Dashboard\Store.core\obj\Debug\net6.0\ref\Store.Core.dll

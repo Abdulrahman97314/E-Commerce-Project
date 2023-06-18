@@ -1,0 +1,116 @@
+<div class="container">
+  <mat-stepper linear #stepper>
+  <form [formGroup]="orderForm">
+  <!-- Delivery Method step -->
+  <mat-step class="my-step" [stepControl]="orderForm.controls['deliveryMethodId']" [editable]="isEditable">
+    <ng-template matStepLabel>Choose delivery method</ng-template>
+    <div class="row">
+      <div class="delivery-method col-lg-6 g-5 justify-content-center align-items-center text-center" *ngFor="let DeliveryMethod of DeliveryMethods">
+        <label class="radio-label w-100" [for]="DeliveryMethod.id" [class.checked]="orderForm.controls['deliveryMethodId'].value == DeliveryMethod.id">
+          <input type="radio" (click)="shippingPrice=DeliveryMethod.cost" formControlName="deliveryMethodId" [id]="DeliveryMethod.id" [value]="DeliveryMethod.id" class="radio-input" />
+          <div class="delivery-info">
+            <div class="short-name">{{ DeliveryMethod.shortName }}</div>
+            <div class="description">{{ DeliveryMethod.description }}</div>
+            <div class="delivery-time">{{ DeliveryMethod.deliveryTime }}</div>
+            <div class="cost">{{ DeliveryMethod.cost | currency }}</div>
+          </div>
+        </label>
+      </div>
+      <div class="button-container text-center mt-4">
+        <button type="button" mat-raised-button color="primary" matStepperNext>Next</button>
+      </div>
+    </div>
+  </mat-step>
+
+  <!-- Shipping Address step -->
+  <mat-step [stepControl]="orderForm.controls['shippingAddress']" [editable]="isEditable">
+      <ng-template matStepLabel>Fill out your address</ng-template>
+      <div formGroupName="shippingAddress">
+        <mat-form-field class="w-100">
+          <mat-label>First Name</mat-label>
+          <input matInput formControlName="firstName" placeholder="Enter your first name" required>
+        </mat-form-field>
+        <mat-form-field class="w-100">
+          <mat-label>Last Name</mat-label>
+          <input matInput formControlName="lastName" placeholder="Enter your last name" required>
+        </mat-form-field >
+        <mat-form-field class="w-100">
+          <mat-label>Street</mat-label>
+          <input matInput formControlName="street" placeholder="Ex. 1 Main St" required>
+        </mat-form-field>
+        <mat-form-field class="w-100">
+          <mat-label>City</mat-label>
+          <input matInput formControlName="city" placeholder="Enter your city" required>
+        </mat-form-field>
+        <mat-form-field class="w-100">
+          <mat-label>Country</mat-label>
+          <input matInput formControlName="country" placeholder="Enter your country" required>
+        </mat-form-field>
+      </div>
+
+      <div class="button-container text-center mt-4">
+
+        <button mat-raised-button color="warn"  class="m-2" matStepperPrevious>Back</button>
+        <button (click)="createPaymentIntent()" type="button" class="m-2" mat-raised-button color="primary" matStepperNext [disabled]="isCompleteLoading">
+          <span *ngIf="!isCompleteLoading">Next</span>
+          <span *ngIf="isCompleteLoading"><mat-spinner diameter="16"></mat-spinner></span>
+        </button>
+      </div>
+  </mat-step>
+  <mat-step >
+    <ng-template matStepLabel>Payment</ng-template>
+    <table class="table table-striped table-bordered text-center align-middle">
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Picture</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Total Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of basket?.items">
+          <td>{{ item.productName }}</td>
+          <td><img width="50" height="50" [src]="item.pictureUrl" [alt]="item.productName"></td>
+          <td>{{ item.price | currency }}</td>
+          <td>{{ item.quantity }}</td>
+          <td>{{ item.price * item.quantity}}</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">Total</td>
+          <td>+ Shipping Price = {{shippingPrice | currency}}</td>
+          <td>{{ getTotalPrice() | currency }}</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <mat-label class="form-label">Name on the card</mat-label>
+    <input placeholder="Name" matInput class="control">
+
+    <mat-label class="form-label">Card Number</mat-label>
+    <div id="cardNumber" matInput class="control"></div>
+
+    <mat-label class="form-label">Expiration Date</mat-label>
+    <div id="cardExpiry" matInput class="control"></div>
+
+    <mat-label class="form-label">CVC</mat-label>
+    <div id="cardCvc" matInput class="control"></div>
+
+    <div class="button-container">
+      <div class="text-center mt-4">
+        <button type="button" mat-raised-button color="warn" class="m-2"  matStepperPrevious>Back</button>
+        <button (click)="onSubmit(orderForm)" type="submit" class="m-2" matStepperNext mat-raised-button color="primary" [disabled]="isCompleteLoading">
+          <span *ngIf="!isCompleteLoading">Complete Order</span>
+          <span *ngIf="isCompleteLoading"><mat-spinner diameter="16"></mat-spinner></span>
+        </button>
+
+      </div>
+
+    </div>
+  </mat-step>
+</form>
+</mat-stepper>
+</div>

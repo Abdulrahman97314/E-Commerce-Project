@@ -1,0 +1,46 @@
+.rating {
+  display: inline-block;
+  font-size: 0;
+  line-height: 0;
+
+  .star {
+    display: inline-block;
+    font-size: 1.5rem;
+    color: #ccc;
+    transition: color .2s ease-in-out;
+    &.active {
+      color: #F9DF4A;
+    }
+  }
+}
+
+$stars: 5;
+$star-size: 30px;
+$star-spacing: 2px;
+$star-on-color: #F9DF4A;
+$star-off-color: #999999;
+
+.Addrating {
+  direction: rtl;
+	label {
+		cursor: pointer;
+		&:not(:first-of-type) {
+			padding-right: $star-spacing;
+		}
+		&:before {
+			content: "\2605";
+			font-size: $star-size + 2px;
+			color: $star-off-color;
+			line-height: 1;
+		}
+	}
+	
+	input {
+		display: none;
+	}
+	input:checked ~ label:before,
+	&:not(:checked) > label:hover:before,
+	&:not(:checked) > label:hover ~ label:before {
+		color: $star-on-color;
+	}
+}

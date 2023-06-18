@@ -1,0 +1,17 @@
+C:\Users\abdo1\OneDrive\Desktop\New folder\.Net 6 api store project + MVC Dashboard\Store.Service\bin\Release\net6.0\Store.Service.deps.json
+C:\Users\abdo1\OneDrive\Desktop\New folder\.Net 6 api store project + MVC Dashboard\Store.Service\bin\Release\net6.0\Store.Service.dll
+C:\Users\abdo1\OneDrive\Desktop\New folder\.Net 6 api store project + MVC Dashboard\Store.Service\bin\Release\net6.0\Store.Service.pdb
+C:\Users\abdo1\OneDrive\Desktop\New folder\.Net 6 api store project + MVC Dashboard\Store.Service\bin\Release\net6.0\Store.Core.dll
+C:\Users\abdo1\OneDrive\Desktop\New folder\.Net 6 api store project + MVC Dashboard\Store.Service\bin\Release\net6.0\Store.Repository.dll
+C:\Users\abdo1\OneDrive\Desktop\New folder\.Net 6 api store project + MVC Dashboard\Store.Service\bin\Release\net6.0\Store.Core.pdb
+C:\Users\abdo1\OneDrive\Desktop\New folder\.Net 6 api store project + MVC Dashboard\Store.Service\bin\Release\net6.0\Store.Repository.pdb
+C:\Users\abdo1\OneDrive\Desktop\New folder\.Net 6 api store project + MVC Dashboard\Store.Service\obj\Release\net6.0\Store.Service.csproj.AssemblyReference.cache
+C:\Users\abdo1\OneDrive\Desktop\New folder\.Net 6 api store project + MVC Dashboard\Store.Service\obj\Release\net6.0\Store.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\abdo1\OneDrive\Desktop\New folder\.Net 6 api store project + MVC Dashboard\Store.Service\obj\Release\net6.0\Store.Service.AssemblyInfoInputs.cache
+C:\Users\abdo1\OneDrive\Desktop\New folder\.Net 6 api store project + MVC Dashboard\Store.Service\obj\Release\net6.0\Store.Service.AssemblyInfo.cs
+C:\Users\abdo1\OneDrive\Desktop\New folder\.Net 6 api store project + MVC Dashboard\Store.Service\obj\Release\net6.0\Store.Service.csproj.CoreCompileInputs.cache
+C:\Users\abdo1\OneDrive\Desktop\New folder\.Net 6 api store project + MVC Dashboard\Store.Service\obj\Release\net6.0\Store.Service.csproj.CopyComplete
+C:\Users\abdo1\OneDrive\Desktop\New folder\.Net 6 api store project + MVC Dashboard\Store.Service\obj\Release\net6.0\Store.Service.dll
+C:\Users\abdo1\OneDrive\Desktop\New folder\.Net 6 api store project + MVC Dashboard\Store.Service\obj\Release\net6.0\refint\Store.Service.dll
+C:\Users\abdo1\OneDrive\Desktop\New folder\.Net 6 api store project + MVC Dashboard\Store.Service\obj\Release\net6.0\Store.Service.pdb
+C:\Users\abdo1\OneDrive\Desktop\New folder\.Net 6 api store project + MVC Dashboard\Store.Service\obj\Release\net6.0\ref\Store.Service.dll

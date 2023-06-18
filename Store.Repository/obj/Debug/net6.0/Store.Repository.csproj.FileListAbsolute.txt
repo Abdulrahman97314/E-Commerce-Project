@@ -1,0 +1,30 @@
+C:\Users\abdo1\OneDrive\Desktop\New folder\Store\Store.Repository\bin\Debug\net6.0\Store.Repository.deps.json
+C:\Users\abdo1\OneDrive\Desktop\New folder\Store\Store.Repository\bin\Debug\net6.0\Store.Repository.dll
+C:\Users\abdo1\OneDrive\Desktop\New folder\Store\Store.Repository\bin\Debug\net6.0\Store.Repository.pdb
+C:\Users\abdo1\OneDrive\Desktop\New folder\Store\Store.Repository\bin\Debug\net6.0\Store.Core.dll
+C:\Users\abdo1\OneDrive\Desktop\New folder\Store\Store.Repository\bin\Debug\net6.0\Store.Core.pdb
+C:\Users\abdo1\OneDrive\Desktop\New folder\Store\Store.Repository\obj\Debug\net6.0\Store.Repository.csproj.AssemblyReference.cache
+C:\Users\abdo1\OneDrive\Desktop\New folder\Store\Store.Repository\obj\Debug\net6.0\Store.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\abdo1\OneDrive\Desktop\New folder\Store\Store.Repository\obj\Debug\net6.0\Store.Repository.AssemblyInfoInputs.cache
+C:\Users\abdo1\OneDrive\Desktop\New folder\Store\Store.Repository\obj\Debug\net6.0\Store.Repository.AssemblyInfo.cs
+C:\Users\abdo1\OneDrive\Desktop\New folder\Store\Store.Repository\obj\Debug\net6.0\Store.Repository.csproj.CoreCompileInputs.cache
+C:\Users\abdo1\OneDrive\Desktop\New folder\Store\Store.Repository\obj\Debug\net6.0\Store.Repository.csproj.CopyComplete
+C:\Users\abdo1\OneDrive\Desktop\New folder\Store\Store.Repository\obj\Debug\net6.0\Store.Repository.dll
+C:\Users\abdo1\OneDrive\Desktop\New folder\Store\Store.Repository\obj\Debug\net6.0\refint\Store.Repository.dll
+C:\Users\abdo1\OneDrive\Desktop\New folder\Store\Store.Repository\obj\Debug\net6.0\Store.Repository.pdb
+C:\Users\abdo1\OneDrive\Desktop\New folder\Store\Store.Repository\obj\Debug\net6.0\ref\Store.Repository.dll
+C:\Users\abdo1\OneDrive\Desktop\New folder\.Net 6 api store project + MVC Dashboard\Store.Repository\bin\Debug\net6.0\Store.Repository.deps.json
+C:\Users\abdo1\OneDrive\Desktop\New folder\.Net 6 api store project + MVC Dashboard\Store.Repository\bin\Debug\net6.0\Store.Repository.dll
+C:\Users\abdo1\OneDrive\Desktop\New folder\.Net 6 api store project + MVC Dashboard\Store.Repository\bin\Debug\net6.0\Store.Repository.pdb
+C:\Users\abdo1\OneDrive\Desktop\New folder\.Net 6 api store project + MVC Dashboard\Store.Repository\bin\Debug\net6.0\Store.Core.dll
+C:\Users\abdo1\OneDrive\Desktop\New folder\.Net 6 api store project + MVC Dashboard\Store.Repository\bin\Debug\net6.0\Store.Core.pdb
+C:\Users\abdo1\OneDrive\Desktop\New folder\.Net 6 api store project + MVC Dashboard\Store.Repository\obj\Debug\net6.0\Store.Repository.csproj.AssemblyReference.cache
+C:\Users\abdo1\OneDrive\Desktop\New folder\.Net 6 api store project + MVC Dashboard\Store.Repository\obj\Debug\net6.0\Store.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\abdo1\OneDrive\Desktop\New folder\.Net 6 api store project + MVC Dashboard\Store.Repository\obj\Debug\net6.0\Store.Repository.AssemblyInfoInputs.cache
+C:\Users\abdo1\OneDrive\Desktop\New folder\.Net 6 api store project + MVC Dashboard\Store.Repository\obj\Debug\net6.0\Store.Repository.AssemblyInfo.cs
+C:\Users\abdo1\OneDrive\Desktop\New folder\.Net 6 api store project + MVC Dashboard\Store.Repository\obj\Debug\net6.0\Store.Repository.csproj.CoreCompileInputs.cache
+C:\Users\abdo1\OneDrive\Desktop\New folder\.Net 6 api store project + MVC Dashboard\Store.Repository\obj\Debug\net6.0\Store.Repository.csproj.CopyComplete
+C:\Users\abdo1\OneDrive\Desktop\New folder\.Net 6 api store project + MVC Dashboard\Store.Repository\obj\Debug\net6.0\Store.Repository.dll
+C:\Users\abdo1\OneDrive\Desktop\New folder\.Net 6 api store project + MVC Dashboard\Store.Repository\obj\Debug\net6.0\refint\Store.Repository.dll
+C:\Users\abdo1\OneDrive\Desktop\New folder\.Net 6 api store project + MVC Dashboard\Store.Repository\obj\Debug\net6.0\Store.Repository.pdb
+C:\Users\abdo1\OneDrive\Desktop\New folder\.Net 6 api store project + MVC Dashboard\Store.Repository\obj\Debug\net6.0\ref\Store.Repository.dll

@@ -1,0 +1,41 @@
+<div class="container mt-5">
+  <div *ngIf="orders.length != 0" >
+
+  <h1 class="mb-4">Orders</h1>
+
+  <table class="table table-striped table-hover">
+    <thead>
+      <tr>
+        <th>Order Date</th>
+        <th>Total</th>
+        <th>Item Name</th>
+        <th>Item Picture</th>
+        <th>Item Price</th>
+        <th>Item Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      <ng-container *ngFor="let order of orders">
+        <tr>
+          <td>{{ order.orderDate | date }}</td>
+          <td>{{ order.total | currency }}</td>
+          <td colspan="4"></td> <!-- Add a blank column for spacing -->
+        </tr>
+        <tr *ngFor="let item of order.items">
+          <td></td> <!-- Add a blank column for spacing -->
+          <td></td> <!-- Add a blank column for spacing -->
+          <td>{{ item.productName }}</td>
+          <td><img [src]="item.pictureUrl" width="50" height="50" alt=""></td>
+          <td>{{ item.price | currency }}</td>
+          <td>{{ item.quantity }}</td>
+        </tr>
+      </ng-container>
+    </tbody>
+  </table>
+</div>
+<div *ngIf="orders.length === 0" class="fw-bold text-center">
+  There are no orders to display.
+</div>
+</div>
+
+

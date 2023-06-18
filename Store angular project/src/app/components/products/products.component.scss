@@ -1,0 +1,22 @@
+.card-img-top {
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+
+.rating {
+  display: inline-block;
+  font-size: 0;
+  line-height: 0;
+
+  .star {
+    display: inline-block;
+    font-size: 1.5rem;
+    color: #ccc;
+    transition: color .2s ease-in-out;
+
+    &.active {
+      color: #ffc107;
+    }
+  }
+}

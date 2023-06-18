@@ -1,0 +1,39 @@
+<div class="m-auto my-5 container">
+    <form [formGroup]="login" class="mat-elevation-z2 p-3" (ngSubmit)="onLoginSubmit(login)">
+      <h1 class="text-center mb-4">Login</h1>
+      <mat-form-field class="w-100">
+        <mat-label>Email</mat-label>
+        <input matInput type="email" id="email" formControlName="email" required>
+        <mat-error *ngIf="login.controls['email'].invalid && (login.controls['email'].dirty || login.controls['email'].touched)">
+          Email is required.
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field class="w-100">
+        <mat-label>Password</mat-label>
+        <input matInput [type]="hide ? 'password' : 'text'" id="password" formControlName="password" required minlength="8" maxlength="30">
+        <button type="button" mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+          <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
+        <mat-error *ngIf="login.controls['password'].errors?.['required'] && (login.controls['password'].dirty || login.controls['password'].touched)">
+          <span>Password is required.</span>
+        </mat-error>
+      </mat-form-field>
+  
+      <div class="text-center text-white">
+        <div *ngIf="message" class="alert alert-danger mt-3">{{ message }}</div>
+        <div class="my-2">
+          <button mat-raised-button color="primary" [disabled]="loading || login.invalid">
+            <ng-container *ngIf="loading == false">Login</ng-container>
+            <ng-container *ngIf="loading == true"><mat-spinner diameter="20"></mat-spinner>
+            </ng-container>
+          </button>
+        </div>
+        <div>
+          <a routerLink="/register">Don't have an account yet? Register now.</a>
+        </div>
+        <div>
+          <a routerLink="/forgetPassword">Forget Password?</a>
+        </div>
+      </div>
+    </form>
+  </div>

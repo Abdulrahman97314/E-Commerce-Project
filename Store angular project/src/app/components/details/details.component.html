@@ -1,0 +1,92 @@
+<div class="container my-5" *ngIf="product">
+  <div class="row">
+    <div class="col-md-6">
+      <img [src]="product.pictureUrl" [alt]="product.name" class="w-100">
+    </div>
+    <div class="col-md-6">
+      <h1>{{ product.name }}</h1>
+      <p>{{ product.description }}</p>
+      <div class="d-flex align-items-center">
+        <div class="rating">
+          <span class="star" [ngClass]="{ 'active': product.averageRating >= 1 }">★</span>
+          <span class="star" [ngClass]="{ 'active': product.averageRating >= 2 }">★</span>
+          <span class="star" [ngClass]="{ 'active': product.averageRating >= 3 }">★</span>
+          <span class="star" [ngClass]="{ 'active': product.averageRating >= 4 }">★</span>
+          <span class="star" [ngClass]="{ 'active': product.averageRating >= 5 }">★</span>
+        </div>
+      </div>
+      <p class="font-weight-bold my-3">Price: {{ product.price | currency }}</p>
+      <p class="font-weight-bold my-3">Brand: {{ product.productBrand }}</p>
+      <p class="font-weight-bold my-3">Type: {{ product.productType }}</p>
+      <div class="form-group">
+          <mat-form-field class="w-50">
+            <mat-label>Quantity</mat-label>
+            <mat-select matNativeControl [(ngModel)]="quantity">
+              <mat-option *ngFor="let i of [1,2,3,4,5,6,7,8,9,10]" [value]="i">{{ i }}</mat-option>
+            </mat-select>
+          </mat-form-field>
+      </div>
+      <button mat-raised-button color="primary" (click)="addToCart(product, quantity)">Add to Cart</button>    </div>
+  </div>
+  <div class="row mt-5">
+    <div class="col-md-12">
+      <div class="d-flex justify-content-between align-items-center">
+        <h2>Reviews</h2>
+      </div>
+      <div class="reviews">
+        <p class="font-weight-bold my-3">{{ product.productRating.length || 0 }} Reviews</p>
+        <div *ngFor="let productRating of product.productRating" class="card my-3">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center">
+              <h5 class="card-title">{{ productRating.userName }}</h5>
+              <h5 class="card-title">{{ productRating.dateTime | date }}</h5>
+            </div>
+            <div class="d-flex align-items-center">
+              <div class="rating mt-2">
+                <span class="star" [ngClass]="{ 'active': productRating.rating >= 1 }">★</span>
+                <span class="star" [ngClass]="{ 'active': productRating.rating >= 2 }">★</span>
+                <span class="star" [ngClass]="{ 'active': productRating.rating >= 3 }">★</span>
+                <span class="star" [ngClass]="{ 'active': productRating.rating >= 4 }">★</span>
+                <span class="star" [ngClass]="{ 'active': productRating.rating >= 5 }">★</span>
+              </div>
+            </div>
+            <div class="ml-3 mt-2">
+              <p class="card-text">{{ productRating.message }}</p>
+            </div>
+          </div>
+        </div>
+        <p *ngIf="product.productRating?.length === 0" class="mt-3">No reviews yet.</p>
+      </div>
+      
+    </div>
+  </div>
+  <div *ngIf="isLogin==true" class="product-rating">
+    <h3>Add a rating</h3>
+    <form [formGroup]="ratingForm" (ngSubmit)="AddRating()" class="rating-form">
+      <input type="hidden" formControlName="productId">
+      <div class="Addrating text-start my-3">
+        <input (click)="ratingForm.get('rating')?.setValue(5)" type="radio" id="star5" name="rating" value="5" /><label for="star5"></label>
+        <input (click)="ratingForm.get('rating')?.setValue(4)" type="radio" id="star4" name="rating" value="4" /><label for="star4"></label>
+        <input (click)="ratingForm.get('rating')?.setValue(3)" type="radio" id="star3" name="rating" value="3" /><label for="star3"></label>
+        <input (click)="ratingForm.get('rating')?.setValue(2)" type="radio" id="star2" name="rating" value="2" /><label for="star2"></label>
+        <input (click)="ratingForm.get('rating')?.setValue(1)" type="radio" id="star1" name="rating" value="1" /><label for="star1"></label>
+    </div>
+    <div>
+        <mat-form-field class="w-100">
+          <mat-label>Message</mat-label>
+          <textarea matInput formControlName="message"></textarea>
+          <mat-error *ngIf="ratingForm.controls['message'].errors?.['required'] && (ratingForm.controls['message'].dirty || ratingForm.controls['message'].touched)">
+            Message is required
+          </mat-error>
+        </mat-form-field>
+
+      </div>
+      <button class="mb-5 mt-2" mat-raised-button color="primary" [disabled]="loading || ratingForm.invalid">
+        <ng-container *ngIf="loading == false" class="text-white">Add Rating</ng-container>
+        <ng-container *ngIf="loading == true"><mat-spinner diameter="20"></mat-spinner>
+        </ng-container>
+      </button>
+    </form>
+  </div>
+</div>
+  

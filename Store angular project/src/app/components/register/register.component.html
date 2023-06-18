@@ -1,0 +1,71 @@
+<div class="m-auto my-5 container">
+<form [formGroup]="register" class="mat-elevation-z2 p-3" (ngSubmit)="onLoginSubmit(register)">
+  <h1 class="text-center mb-4">Register</h1>
+  <mat-form-field class="w-100">
+    <mat-label>Display Name</mat-label>
+    <input matInput type="text" id="displayName" formControlName="displayName" required>
+    <mat-error *ngIf="register.controls['displayName'].invalid && (register.controls['displayName'].dirty || register.controls['displayName'].touched)">
+      <span *ngIf="register.controls['displayName'].errors?.['required']">Display name is required.</span>
+      <span *ngIf="register.controls['password'].errors?.['minlength']">Display Name must be at least 8 characters long.</span>
+      <span *ngIf="register.controls['password'].errors?.['maxlength']">Display Name cannot be longer than 30 characters.</span>
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field class="w-100">
+    <mat-label>Email</mat-label>
+    <input matInput type="email" id="email" formControlName="email" required>
+    <mat-error *ngIf="register.controls['email'].invalid && (register.controls['email'].dirty || register.controls['email'].touched)">
+      <span *ngIf="register.controls['email'].errors?.['required']">Email is required.</span>
+      <span *ngIf="register.controls['email'].errors?.['email']">Invalid email format.</span>
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field class="w-100">
+    <mat-label>Phone Number</mat-label>
+    <input matInput type="tel" id="phoneNumber" formControlName="phoneNumber" required pattern="^[0-9]{10}$">
+    <mat-error *ngIf="register.controls['phoneNumber'].invalid && (register.controls['phoneNumber'].dirty || register.controls['phoneNumber'].touched)">
+      <span *ngIf="register.controls['phoneNumber'].errors?.['required']">Phone number is required.</span>
+      <span *ngIf="register.controls['phoneNumber'].errors?.['pattern']">Invalid phone number format.</span>
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field class="w-100">
+    <mat-label>Password</mat-label>
+    <input matInput [type]="hide ? 'password' : 'text'" id="password" formControlName="password" required minlength="8" maxlength="30">
+    <button type="button" mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+      <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+    </button>
+    <mat-error *ngIf="register.controls['password'].invalid && (register.controls['password'].dirty || register.controls['password'].touched)">
+      <span *ngIf="register.controls['password'].errors?.['required']">Password is required.</span>
+      <span *ngIf="register.controls['password'].errors?.['minlength']">Password must be at least 8 characters long.</span>
+      <span *ngIf="register.controls['password'].errors?.['maxlength']">Password cannot be longer than 30 characters.</span>
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field class="w-100">
+    <mat-label>Confirm Password</mat-label>
+    <input matInput [type]="hideConfirm ? 'password' : 'text'" id="confirmPassword" formControlName="confirmPassword" required minlength="8" maxlength="30">
+    <button type="button" mat-icon-button matSuffix (click)="hideConfirm = !hideConfirm" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hideConfirm">
+      <mat-icon>{{hideConfirm ? 'visibility_off' : 'visibility'}}</mat-icon>
+    </button>
+    <mat-error *ngIf="register.controls['confirmPassword'].invalid && (register.controls['confirmPassword'].dirty || register.controls['confirmPassword'].touched)">
+      <span *ngIf="register.controls['confirmPassword'].errors?.['required']">Confirm password is required.</span>
+      <span *ngIf="register.hasError('notMatched', ['confirmPassword'])">Passwords do not match.</span>
+    </mat-error>
+  </mat-form-field>
+  <div class="text-center">
+    <div *ngIf="message" class="alert alert-danger mt-3">{{ message }}</div>
+        <div class="my-2">
+          <button mat-raised-button color="primary" [disabled]="loading || register.invalid">
+            <ng-container *ngIf="loading == false">Register</ng-container>
+            <ng-container *ngIf="loading == true"><mat-spinner diameter="20"></mat-spinner>
+            </ng-container>
+          </button>
+    </div>
+    <div>
+        <a routerLink="/login">Already registered? Go to login now!</a>
+    </div>
+  </div>
+  
+</form>
+</div>

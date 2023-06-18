@@ -1,0 +1,99 @@
+﻿@model Pagination<ProductViewModel>
+@{
+    int totalPages = (int)Math.Ceiling((double)Model.Count / Model.PageSize);
+}
+@if (Model.Data.Count > 0)
+{
+    <div class="d-flex justify-content-between ">
+            <h2>Product List - Page @Model.PageIndex of @totalPages</h2>
+
+            <div>
+                <a class="btn btn-primary" asp-action="Create">Add New Product</a>
+            </div>
+        <form asp-action="Index">
+        <div class="form-inline ml-3">
+            <div class="input-group">
+
+                <input class="form-control" asp-for="@Model.PageIndex" placeholder="Enter Page index">
+                <div class="input-group-append">
+                    <button type="submit" class="btn btn-outline-primary" asp-action="Index">Go</button>
+                </div>
+            </div>
+            </div>
+        </form>
+
+        </div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Image</th>
+                <th>Price</th>
+                <th>Brand</th>
+                <th>Type</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var product in Model.Data)
+            {
+                <tr>
+                    <td>@product.Id</td>
+                    <td>@product.Name</td>
+                    <td>@product.Description</td>
+                    <td>
+                        <img width="100" hight="100" src="@product.PictureUrl">
+                    </td>
+                    <td>@product.Price</td>
+                    <td>@product.ProductBrand.Name</td>
+                    <td>@product.ProductType.Name</td>
+                    <td><a class="btn btn-warning" asp-action="Update" asp-route-id="@product.Id">Edit</a></td>
+                    <td><a class="btn btn-danger" asp-action="Delete" asp-route-id="@product.Id">Delete</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+        <nav>
+            <ul class="pagination justify-content-center">
+                @if (totalPages > 1)
+                {
+                    @if (Model.PageIndex > 1)
+                    {
+                        <li class="page-item">
+                            <form asp-action="Index">
+                                <input type="hidden" name="pageIndex" asp-for="@Model.PageIndex" value="@(Model.PageIndex - 1)" />
+                                <button type="submit" class="page-link">Previous</button>
+                            </form>
+                        </li>
+                    }
+
+                    @for (int i = Math.Max(1, Model.PageIndex - 4); i <= Math.Min(totalPages, Model.PageIndex + 4); i++)
+                    {
+                        <li class="page-item @(i == Model.PageIndex? "active" : "")">
+                            <form asp-action="Index" method="post">
+                                <input type="hidden" name="pageIndex" value="@i" />
+                                <button type="submit" class="page-link">@i</button>
+                            </form>
+                        </li>
+                    }
+
+                    @if (Model.PageIndex < totalPages)
+                    {
+                        <li class="page-item">
+                            <form asp-action="Index">
+                                <input type="hidden" name="pageIndex" asp-for="@Model.PageIndex" value="@(Model.PageIndex + 1)" />
+                                <button type="submit" class="page-link">Next</button>
+                            </form>
+                        </li>
+                    }
+                }
+            </ul>
+        </nav>
+}
+else
+{
+    <p>There are no products to show.</p>
+}

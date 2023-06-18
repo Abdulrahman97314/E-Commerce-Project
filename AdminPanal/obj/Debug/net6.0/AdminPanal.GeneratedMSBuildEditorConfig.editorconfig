@@ -1,0 +1,105 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = AdminPanal
+build_property.RootNamespace = AdminPanal
+build_property.ProjectDir = C:\Users\abdo1\OneDrive\Desktop\New folder\.Net 6 api store project + MVC Dashboard\AdminPanal\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\abdo1\OneDrive\Desktop\New folder\.Net 6 api store project + MVC Dashboard\AdminPanal
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/abdo1/OneDrive/Desktop/New folder/.Net 6 api store project + MVC Dashboard/AdminPanal/Views/Admin/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abdo1/OneDrive/Desktop/New folder/.Net 6 api store project + MVC Dashboard/AdminPanal/Views/Brand/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmRcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abdo1/OneDrive/Desktop/New folder/.Net 6 api store project + MVC Dashboard/AdminPanal/Views/Brand/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abdo1/OneDrive/Desktop/New folder/.Net 6 api store project + MVC Dashboard/AdminPanal/Views/Brand/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmRcVXBkYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abdo1/OneDrive/Desktop/New folder/.Net 6 api store project + MVC Dashboard/AdminPanal/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abdo1/OneDrive/Desktop/New folder/.Net 6 api store project + MVC Dashboard/AdminPanal/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abdo1/OneDrive/Desktop/New folder/.Net 6 api store project + MVC Dashboard/AdminPanal/Views/Product/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abdo1/OneDrive/Desktop/New folder/.Net 6 api store project + MVC Dashboard/AdminPanal/Views/Product/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abdo1/OneDrive/Desktop/New folder/.Net 6 api store project + MVC Dashboard/AdminPanal/Views/Product/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxVcGRhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abdo1/OneDrive/Desktop/New folder/.Net 6 api store project + MVC Dashboard/AdminPanal/Views/Role/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abdo1/OneDrive/Desktop/New folder/.Net 6 api store project + MVC Dashboard/AdminPanal/Views/Role/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abdo1/OneDrive/Desktop/New folder/.Net 6 api store project + MVC Dashboard/AdminPanal/Views/Role/RoleForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxSb2xlRm9ybS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abdo1/OneDrive/Desktop/New folder/.Net 6 api store project + MVC Dashboard/AdminPanal/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abdo1/OneDrive/Desktop/New folder/.Net 6 api store project + MVC Dashboard/AdminPanal/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abdo1/OneDrive/Desktop/New folder/.Net 6 api store project + MVC Dashboard/AdminPanal/Views/Type/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHlwZVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abdo1/OneDrive/Desktop/New folder/.Net 6 api store project + MVC Dashboard/AdminPanal/Views/Type/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHlwZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abdo1/OneDrive/Desktop/New folder/.Net 6 api store project + MVC Dashboard/AdminPanal/Views/Type/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHlwZVxVcGRhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abdo1/OneDrive/Desktop/New folder/.Net 6 api store project + MVC Dashboard/AdminPanal/Views/User/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abdo1/OneDrive/Desktop/New folder/.Net 6 api store project + MVC Dashboard/AdminPanal/Views/User/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abdo1/OneDrive/Desktop/New folder/.Net 6 api store project + MVC Dashboard/AdminPanal/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abdo1/OneDrive/Desktop/New folder/.Net 6 api store project + MVC Dashboard/AdminPanal/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abdo1/OneDrive/Desktop/New folder/.Net 6 api store project + MVC Dashboard/AdminPanal/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-2s6qt69888
